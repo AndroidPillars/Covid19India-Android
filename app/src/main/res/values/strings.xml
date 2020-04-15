@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Covid-19 India Tracker</string>
+    <string name="app_name_unofficial">Covid-19 India Tracker \n[ unofficial ]</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="loading">Loading...</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.asksira.loopingviewpager.LoopingViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_marginBottom="10dp"
+                android:clipToPadding="false"
+                app:autoScroll="true"
+                app:isInfinite="true"
+                app:viewpagerAspectRatio="1.78"
+                app:itemAspectRatio="1.78"
+                app:scrollInterval="5000" />
+
+            <com.rd.PageIndicatorView
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:piv_animationDuration="200"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                app:piv_animationType="slide"
+                app:piv_interactiveAnimation="true" />
+
+        </FrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frame_layout"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+</io.codetail.widget.RevealFrameLayout>
+

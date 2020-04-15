@@ -1,0 +1,64 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidpillars.covid19.SplashScreenActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/parent_splash_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2c003e">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_corona"/>
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:tint="@android:color/white"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/img_logo"
+            android:text="@string/app_name_unofficial"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="@dimen/margin50"
+            android:textColor="@android:color/white"
+            android:padding="5dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:tint="@android:color/white"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+            android:text="@string/loading"
+            android:textSize="14sp"
+            android:layout_marginBottom="100dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

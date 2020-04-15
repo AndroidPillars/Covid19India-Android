@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/header_popup_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_toast_bend_corners">
+
+        <RelativeLayout
+            android:id="@+id/toast_pop_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/total_marging_right"
+                android:layout_marginTop="@dimen/app_min_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/title_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorToolBar"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/message_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_min_margin"
+                android:layout_marginTop="@dimen/app_max_margin"
+                android:layout_marginRight="@dimen/app_min_margin"
+                android:layout_marginBottom="@dimen/app_min_margin"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorToolBar"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/bottom_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_content"
+                android:layout_marginTop="@dimen/app_min_margin"
+                android:background="@drawable/custom_toast_btn"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    style="@style/CustomButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin32"
+                    android:layout_below="@+id/edt_user_otp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/ok"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

@@ -1,0 +1,20 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="sliding_menu_width">80dp</dimen>
+
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin50">50dp</dimen>
+    <dimen name="margin40">40dp</dimen>
+    <dimen name="margin32">32dp</dimen>
+
+    <dimen name="app_min_margin">10dp</dimen>
+    <dimen name="app_max_margin">20dp</dimen>
+    <dimen name="total_marging_right">30dp</dimen>
+
+    <dimen name="tool_bar_image_size">28dp</dimen>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#363062</color>
+    <color name="colorPrimaryDark">#2c003e</color>
+    <color name="colorAccent">#2c003e</color>
+
+    <color name="colorToolBar">#363062</color>
+    <color name="colorSandal">#fde2e2</color>
+    <color name="colorSandal_dark">#ffb6b6</color>
+    <color name="colorViolet">#844685</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="overlay_dark_10">#1A000000</color>
+    <color name="overlay_dark_20">#33000000</color>
+    <color name="icon_tintclr">#a9885d</color>
+</resources>
